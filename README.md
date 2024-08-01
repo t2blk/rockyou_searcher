@@ -16,10 +16,17 @@ Insert the patterns with '\n' line terminator except the last line
 echo -e "secret_1\nsecret_2" > patterns
 ```
 
-## Run
+## Usage
 
 ```
-./rockyou_searcher -s rockyou2024.txt -p patterns -o result
+-s <SOURCE> -p <PATTERNS> -o <OUTPUT> [OPTIONS]
+
+Options:
+
+-t		num of threads
+-e		use strcmp for patterns (default strstr)
+-x		don't print patterns
+-h		help
 ```
 
 ## The -e option
@@ -27,6 +34,12 @@ echo -e "secret_1\nsecret_2" > patterns
 With -e option compares the line with pattern[s]
 <br>
 Without -e option checks the line contains pattern[s]
+
+## Run
+
+```
+./rockyou_searcher -s rockyou2024.txt -p patterns -o result
+```
 
 ## Result
 
@@ -40,15 +53,3 @@ secret_1
 secret_2
 ```
 
-## Usage
-
-```
--s <SOURCE> -p <PATTERNS> -o <OUTPUT> [OPTIONS]
-
-Options:
-
--t		num of threads
--e		use strcmp for patterns (default strstr)
--x		don't print patterns
--h		help
-```

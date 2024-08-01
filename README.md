@@ -4,7 +4,7 @@ RockYou Searcher was developed to search large files like rockyou.txt. The file 
 
 ## Download
 
-https://github.com/exploit-development/RockYou2024
+<a href="https://github.com/exploit-development/RockYou2024" target="_blank">https://github.com/exploit-development/RockYou2024</a>
 
 ## Build
 

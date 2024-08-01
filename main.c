@@ -43,7 +43,7 @@ size_t *offsets;
 char *source_path, *patterns_path;
 size_t patterns_len = 0, exact = 0, not_print_patterns=0;
 struct Pattern *patterns;
-volatile struct Processors *processors;
+struct Processors *processors;
 
 void usage() {
 	printf("Usage:\n\n-s <SOURCE> -p <PATTERNS> -o <OUTPUT> [OPTIONS]\n\nOptions:\n\n-t\t\tnum of threads\n-e\t\tuse strcmp for patterns (default strstr)\n-x\t\tdon't print patterns\n-h\t\thelp\n");

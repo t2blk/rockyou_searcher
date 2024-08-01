@@ -2,10 +2,6 @@
 
 RockYou Searcher was developed to search large files like rockyou.txt. The file contains an enormous password compilation. The file size is around 150GB. You can check the passwords to see if they were leaked via RockYou Searcher.
 
-## Download
-
-<a href="https://github.com/exploit-development/RockYou2024" target="_blank">https://github.com/exploit-development/RockYou2024</a>
-
 ## Build
 
 ```

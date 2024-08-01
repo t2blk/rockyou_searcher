@@ -53,3 +53,27 @@ secret_1
 secret_2
 ```
 
+## Test
+
+- 128 bytes, 12 lines patterns file
+- Intel(R) Core(TM) i7-2620M CPU @ 2.70GHz 4 core
+```
+hdparm -Tt /dev/sdb
+
+/dev/sdb:
+ Timing cached reads:   11808 MB in  1.99 seconds = 5918.94 MB/sec
+ Timing buffered disk reads: 564 MB in  3.01 seconds = 187.47 MB/sec
+```
+
+<br>
+  
+```
+time ./rockyou_searcher -s rockyou2024.txt -p patterns -o result
+
+229% cpu 2:25:46.39 total
+```
+
+- Max memory usage is around 3MB
+
+### !!! DON'T FORGET REMOVE THE PATTERNS FILE !!!
+

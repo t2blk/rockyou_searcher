@@ -241,7 +241,7 @@ void *worker(void *_i) {
 		return NULL;
 	}
 
-	size_t len = 0, cursor = 0;
+	size_t len = 0, cursor = begin;
 	int fd = fileno(file);
 	char c;
 
@@ -262,7 +262,7 @@ void *worker(void *_i) {
 
 		if (c == '\n') {
 
-			cursor = ftell(file);
+			cursor += len;
 			if (previous_src_len < len) {
 				src = realloc(src,len);
 				if (src == NULL) {
